@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="estilo.css" />
+
+</head>
+
+<body>
+   
+    <div  class = "calculadora"> 
+
+        <input type="text" id="tela" name="tela" placeholder="Digite os números"/>
+ 
+        <table>
+
+        <tr>
+            <td>  <button class="botao"  onclick = "operacao(1)" > + </button>   </td>
+            <td>  <button class="botao"  onclick = "operacao(2)" > - </button>   </td>
+            <td>  <button class="botao"  onclick = "operacao(3)" > / </button>   </td>
+            <td>  <button class="botao"  onclick = "operacao(4)" > * </button>   </td>
+            <td>  <button class="botao"  onclick = "operacao(5)" > % </button>   </td>
+            <td>  <button class="botao"  onclick = "operacao(6)" > √ </button>   </td>        
+        </tr>        
+
+        <tr>
+            <td colspan="2">  <button class="botaoGrande"  id = '7' onclick = "adicionarNUM(7)"> 7 </button></td>
+            <td colspan="2">  <button class="botaoGrande"  id = '8' onclick = "adicionarNUM(8)"> 8 </button></td>
+            <td colspan="2">  <button class="botaoGrande"  id = '9' onclick = "adicionarNUM(9)"> 9 </button></td>
+         </tr>
+        
+        <tr>
+            <td colspan="2"> <button class="botaoGrande" id = '4' onclick = "adicionarNUM(4)" > 4 </button> </td>
+            <td colspan="2"> <button class="botaoGrande" id = '5' onclick = "adicionarNUM(5)" > 5 </button> </td>
+            <td colspan="2"> <button class="botaoGrande" id = '6' onclick = "adicionarNUM(6)" > 6 </button> </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"> <button class="botaoGrande" id = '1' onclick = "adicionarNUM(1)"> 1 </button></td>
+            <td colspan="2"> <button class="botaoGrande" id = '2' onclick = "adicionarNUM(2)"> 2 </button></td>
+            <td colspan="2"> <button class="botaoGrande" id = '3' onclick = "adicionarNUM(3)"> 3 </button></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">  <button class="botaoGrande" id = '0' onclick = "adicionarNUM(0)" > 0 </button>   </td>
+            <td colspan="2">  <button class="botaoGrande" onclick="limpar()"  > CE </button>   </td>
+            <td colspan="2">  <button class="botaoGrande" onclick="resultado()"   > = </button>   </td>
+        </tr>
+
+        </table>
+
+    </div>
+
+       <script src = "function.js" >  </script> 
+
+</body>
+
+</html>
